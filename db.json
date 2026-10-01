@@ -1,0 +1,56 @@
+{
+  "jogos": [
+    {
+      "id": "1",
+      "titulo": "Minecraft",
+      "genero": "Sandbox",
+      "plataforma": "PC",
+      "nota": 9,
+      "status": "Jogando"
+    },
+    {
+      "id": "2",
+      "titulo": "Hollow Knight",
+      "genero": "Metroidvania",
+      "plataforma": "PC",
+      "nota": 10,
+      "status": "Finalizado"
+    },
+    {
+      "titulo": "Forza Horizon",
+      "genero": "Corrida",
+      "plataforma": "Xbox",
+      "nota": 9,
+      "status": "Jogando",
+      "id": "3"
+    },
+    {
+      "id": "4",
+      "titulo": "The Witcher 3",
+      "genero": "RPG",
+      "plataforma": "PC",
+      "nota": 10,
+      "status": "Jogando"
+    },
+    {
+      "id": "6",
+      "titulo": "Celeste",
+      "genero": "Plataforma",
+      "plataforma": "Switch",
+      "nota": 9,
+      "status": "Finalizado"
+    },
+    {
+      "id": "2Iz3yuzE8kU"
+    },
+    {
+      "titulo": "Hollow Knight",
+      "genero": "Metroidvania",
+      "plataforma": "PC",
+      "nota": 10,
+      "status": "Finalizado",
+      "id": "7Dpy0TZuaU4"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

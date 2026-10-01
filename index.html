@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>GameTrack</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>GAME TRACK</h1>
+
+  <div class="dashboard">
+    <div><b id="total">0</b> Jogos cadastrados</div>
+    <div><b id="jogando">0</b> Jogando</div>
+    <div><b id="finalizados">0</b> Finalizados</div>
+  </div>
+
+  <form id="form">
+    <input id="titulo" placeholder="Título">
+    <input id="genero" placeholder="Gênero">
+    <input id="plataforma" placeholder="Plataforma">
+    <input id="nota" type="number" placeholder="Nota (0 a 10)">
+    <select id="status">
+      <option value="">Status</option>
+      <option>Quero jogar</option>
+      <option>Jogando</option>
+      <option>Finalizado</option>
+      <option>Abandonado</option>
+    </select>
+    <button>Salvar</button>
+  </form>
+
+  <p id="msg"></p>
+
+  <input id="pesquisa" placeholder="Pesquisar jogo...">
+  <select id="filtro">
+    <option>Todos</option>
+    <option>Quero jogar</option>
+    <option>Jogando</option>
+    <option>Finalizado</option>
+    <option>Abandonado</option>
+  </select>
+
+  <div id="lista"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

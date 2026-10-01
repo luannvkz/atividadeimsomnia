@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f2f3f7;
+  color: #0f1020;
+}
+
+h1 {
+  border-bottom: 4px solid #e30613;
+  padding-bottom: 8px;
+  display: inline-block;
+}
+
+/* Dashboard */
+.dashboard {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.dashboard div {
+  flex: 1;
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  color: #666;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.dashboard b {
+  display: block;
+  font-size: 32px;
+  color: #6a1be0;
+}
+
+/* Formulário */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+input, select, button {
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+input, select {
+  border: 1px solid #ccc;
+}
+
+form input, form select {
+  flex: 1 1 150px;
+}
+
+input:focus, select:focus {
+  outline: 2px solid #4a78e8;
+}
+
+button {
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+form button {
+  background: #1fa463;
+  flex: 1 1 100%;
+}
+
+/* Mensagem */
+#msg {
+  min-height: 24px;
+  font-weight: bold;
+  color: #4a78e8;
+}
+
+/* Pesquisa e filtro */
+#pesquisa {
+  width: 60%;
+  border: 1px solid #ccc;
+}
+
+/* Cards */
+.card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.card div {
+  flex: 1;
+}
+
+.card b {
+  display: block;
+  font-size: 18px;
+}
+
+.card small {
+  color: #666;
+}
+
+.nota {
+  display: block;
+  color: #6a1be0;
+  font-weight: bold;
+}
+
+.nota.alta {
+  color: #e6a100;
+}
+
+/* Status */
+.status {
+  padding: 6px 14px;
+  border-radius: 20px;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.quero-jogar { background: #6a1be0; }
+.jogando { background: #4a78e8; }
+.finalizado { background: #1fa463; }
+.abandonado { background: #888; }
+
+/* Botões do card */
+.editar { background: #f0a830; }
+.excluir { background: #e30613; }
+
+/* Celular */
+@media (max-width: 600px) {
+  .dashboard, .card {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  #pesquisa {
+    width: 100%;
+  }
+}
